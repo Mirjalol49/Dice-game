@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="box-wrapper">
+            <div class="box-start  player--0 active-player">
+                <h2 class="name-title">SIZ</h2>
+                <p class="score" id="score--0">0</p>
+                <p class= "current-score-name">HOZIRGI BALL</p>
+                <p class="current-score" id="current--0">0</p>
+            </div>
+            <div class="box-end player--1">
+                <h2 class="name-title">SHERIGIZ</h2>
+                <p class="score" id="score--1">0</p>
+                <p class= "current-score-name">HOZIRGI BALL</p>
+                <p class="current-score" id="current--1">0</p>
+                
+            </div>
+        </div>
+        
+        <!-- CONTROLLER -->
+        <div class="control-box">
+            <button class="control-newgame">🔁Yangi O'yin</button>
+            <div class="control-dice"> 
+                <img class="dice hidden" src="./images/1.png" alt="dice" width="120px">
+            </div>
+            <button class="control-roll" >🎲Roll dice</button>
+            <button class="control-pass">🤚Navbatni o'tqazib yuborish</button>
+        </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
