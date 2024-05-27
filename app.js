@@ -80,7 +80,7 @@ btnPass.addEventListener("click", function () {
       scores[activePlayer];
 
     // 2. Check if the player's score is >= 100
-    if (scores[activePlayer] >= 10) {
+    if (scores[activePlayer] >= 100) {
       // Adjust this threshold as per your game rules
       // Finish game
       playing = false;
