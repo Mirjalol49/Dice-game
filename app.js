@@ -1,15 +1,27 @@
 // !Selecting Elements
+
+//? Player 1 and Player 2 boxes
 let player1 = document.querySelector(".player--0");
 let player2 = document.querySelector(".player--1");
 
+//? Main scores
 let score0El = document.querySelector("#score--0");
 const score1El = document.querySelector("#score--1");
+
+//? Current Scores
 const current0El = document.querySelector("#current--0");
 const current1El = document.querySelector("#current--1");
 
+//? Dice Img
 const diceImg = document.querySelector(".dice");
+
+//? Reset Game
 const btnNew = document.querySelector(".control-newgame");
+
+//? Roll the dice btn
 const btnRoll = document.querySelector(".control-roll");
+
+//? Control the turn btn
 const btnPass = document.querySelector(".control-pass");
 
 let scores, currentScore, activePlayer, playing;
@@ -98,4 +110,5 @@ btnPass.addEventListener("click", function () {
   }
 });
 
+//! Reset the game function
 btnNew.addEventListener("click", resetGame);
